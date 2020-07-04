@@ -7,6 +7,14 @@ FFFFFF-адрес в футере
  шрифт логотипа-font-family: Raleway;
  шрифт текста-font-family: Roboto;
  */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -17,12 +25,13 @@ address {
   font-style: normal;
 }
 .page {
+  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--bg-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+/* точки списка */
 .list {
   list-style: none;
 }

@@ -68,9 +68,17 @@ a.link:focus {
 .item {
   color: var(--title-text-color);
 }
-
 /* навигация сайта */
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;

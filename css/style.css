@@ -31,9 +31,22 @@ address {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+/* центрирование страницы через div */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* точки списка */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* работа ссылок */
 a.link {
@@ -74,34 +87,46 @@ a.link:focus {
 /* тело страницы */
 /*герой страницы*/
 .hero {
-  background-color: var(--accent-color);
+  background-color: var(--primary-text-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bg-color);
 }
-.hero .button {
+.button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: var(--bg-color);
 }
 /* Заголовки секций */
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 /* Наши преимущества */
 .advantages .title {

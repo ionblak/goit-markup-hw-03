@@ -1,12 +1,3 @@
-/*757575-вторичный цвет
-212121-основной цвет текста
-FFFFFF-адрес в футере
-
- color:rgb(255,255,255,0.6)-цвет телефона и эмейла в футере
- 2196F3-цвет акцента
- шрифт логотипа-font-family: Raleway;
- шрифт текста-font-family: Roboto;
- */
 html {
   box-sizing: border-box;
 }
@@ -21,6 +12,7 @@ html {
   --accent-color: #2196f3;
   --bg-color: #fff;
 }
+/* утилиты */
 address {
   font-style: normal;
 }
@@ -31,7 +23,6 @@ address {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-/* центрирование страницы через div */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -40,7 +31,6 @@ address {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 /* точки списка */
 .list {
@@ -56,7 +46,8 @@ a.link:hover,
 a.link:focus {
   color: var(--accent-color);
 }
-/* логотип сайта */
+/* утилиты! */
+/* логотип */
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -69,21 +60,34 @@ a.link:focus {
   color: var(--title-text-color);
 }
 /* навигация сайта */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
   display: flex;
+  margin-left: 85px;
 }
-.site-nav .item + .item {
-  margin-left: 50px;
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 .site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.mail {
+  display: flex;
+  margin-left: auto;
+}
+.mail .item:not(:last-child) {
+  margin-right: 32px;
 }
 .mail .link {
   color: var(--title-text-color);
@@ -102,6 +106,7 @@ a.link:focus {
   margin-top: 0;
   margin-bottom: 30px;
   padding: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,6 +130,7 @@ a.link:focus {
 }
 /* Заголовки секций */
 .section-title {
+  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -137,6 +143,16 @@ a.link:focus {
   margin-bottom: 10px;
 }
 /* Наши преимущества */
+.advantages {
+  display: flex;
+}
+.advantages .item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.advantages.item:nth-child(4n) {
+  margin-right: 0;
+}
 .advantages .title {
   font-weight: 700;
   font-size: 14px;
@@ -149,6 +165,17 @@ a.link:focus {
   line-height: 1.71;
 }
 /* Чем мы занимаемся */
+.works {
+  display: flex;
+  padding-bottom: 94px;
+}
+.works .item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+.works .advantages.item:nth-child(3n) {
+  margin-right: 0;
+}
 .works .title {
   font-weight: 700;
   font-size: 14px;
@@ -158,6 +185,17 @@ a.link:focus {
   color: var(--bg-color);
 }
 /* Наша команда */
+.team {
+  display: flex;
+  padding-bottom: 94px;
+}
+.team .item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.team .item:nth-child(4n) {
+  margin-right: 0;
+}
 .team .title {
   font-weight: 500;
   font-size: 16px;
@@ -171,6 +209,21 @@ a.link:focus {
   text-align: center;
 }
 /* постоянные клиенты */
+.customers {
+  display: flex;
+  padding-bottom: 94px;
+}
+.customers .item {
+  width: calc((100%-150px) / 6);
+  margin-right: 30px;
+}
+.customers .item:nth-child(6n) {
+  margin-right: 0;
+}
+.customers .link {
+  display: block;
+  text-align: center;
+}
 /* подвал страницы */
 .footer {
   background-color: #2f303a;

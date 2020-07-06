@@ -11,6 +11,9 @@ html {
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --bg-color: #fff;
+  --footer-bg-color: #2f303a;
+  --footer-contaks-color: rgba(255, 255, 255, 0.6);
+  --team-bg-color:#F5F4FA;
 }
 /* утилиты */
 address {
@@ -20,7 +23,7 @@ address {
   margin: 0;
   color: var(--primary-text-color);
   background-color: var(--bg-color);
-  font-family: Roboto, sans-serif;
+  font-family:Roboto,sans-serif;
   letter-spacing: 0.03em;
 }
 .container {
@@ -28,9 +31,7 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.section {
-  padding-top: 94px;
+  outline:1px solid red ;
 }
 /* точки списка */
 .list {
@@ -50,13 +51,13 @@ a.link:focus {
 /* логотип */
 .logo {
   color: var(--accent-color);
-  font-family: Raleway, sans-serif;
+  font-family:Raleway,sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
-.item {
+.logo .item {
   color: var(--title-text-color);
 }
 /* навигация сайта */
@@ -99,6 +100,8 @@ a.link:focus {
 /* тело страницы */
 /*герой страницы*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--primary-text-color);
   text-align: center;
 }
@@ -143,6 +146,10 @@ a.link:focus {
   margin-bottom: 10px;
 }
 /* Наши преимущества */
+.section-advantages{
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 .advantages {
   display: flex;
 }
@@ -165,9 +172,12 @@ a.link:focus {
   line-height: 1.71;
 }
 /* Чем мы занимаемся */
+.section-works{
+  padding-bottom: 94px;
+  padding-top: 47px;
+}
 .works {
   display: flex;
-  padding-bottom: 94px;
 }
 .works .item {
   width: calc((100%-60px) / 3);
@@ -187,7 +197,6 @@ a.link:focus {
 /* Наша команда */
 .team {
   display: flex;
-  padding-bottom: 94px;
 }
 .team .item {
   width: calc((100%-90px) / 4);
@@ -208,10 +217,16 @@ a.link:focus {
   line-height: 1.19;
   text-align: center;
 }
+.section-team{
+  background-color:var(--team-bg-color) ;
+}
+.section-team,.section-customers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* постоянные клиенты */
 .customers {
   display: flex;
-  padding-bottom: 94px;
 }
 .customers .item {
   width: calc((100%-150px) / 6);
@@ -226,7 +241,7 @@ a.link:focus {
 }
 /* подвал страницы */
 .footer {
-  background-color: #2f303a;
+  background-color:var(--footer-bg-color);
 }
 /* логотип в футере */
 .footer .word {
@@ -238,11 +253,11 @@ a.link:focus {
   color: var(--bg-color);
 }
 .footer .contaks {
-  font-family: Roboto, sans-serif;
+  font-family:var(--main-font)
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var( --footer-contaks-color)
 }
 .action {
   font-weight: 700;
@@ -255,7 +270,7 @@ a.link:focus {
 /* страница портфолио */
 
 .strainer .button {
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -264,7 +279,7 @@ a.link:focus {
   color: var(--title-text-color);
 }
 .projects .title {
-  font-family: Roboto;
+  
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -272,14 +287,14 @@ a.link:focus {
   color: var(--title-text-color);
 }
 .projects .text {
-  font-family: Roboto;
+
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--bg-color);
 }
 .projects .item {
-  font-family: Roboto;
+  
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

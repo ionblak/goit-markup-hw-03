@@ -227,6 +227,18 @@ a.link:focus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* стилизация соц-сетей */
+.social-networks {
+  display: flex;
+  text-align: center;
+}
+.team .social-networks .item {
+  width: calc((100%-30px) / 4);
+  margin-right: 10px;
+}
+.social-networks .item:nth-child(4n) {
+  margin-right: 0;
+}
 /* постоянные клиенты */
 .customers {
   display: flex;
@@ -245,12 +257,20 @@ a.link:focus {
 /* подвал страницы */
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* логотип в футере */
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
 .footer .word {
   color: var(--bg-color);
 }
 .footer .location {
+  display: block;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--bg-color);
@@ -262,23 +282,66 @@ a.link:focus {
   letter-spacing: 0.03em;
   color: var(--footer-contaks-color);
 }
+.footer .mail {
+  display: block;
+  margin-bottom: 9px;
+}
 .action {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--bg-color);
 }
-
+.footer .container {
+  display: flex;
+  align-items: center;
+}
+.block-contaks {
+  margin-right: 69px;
+}
+.social-networks {
+  display: flex;
+  text-align: center;
+}
+.social-networks .item {
+  width: calc((100%-30px) / 4);
+  margin-right: 10px;
+}
+.social-networks .item:nth-child(4n) {
+  margin-right: 0;
+}
 /* страница портфолио */
-
-.strainer .button {
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.strainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.strainer .radio-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+.projects .item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+.projects .item:nth-child(3n) {
+  margin-right: 0;
 }
 .projects .title {
   font-weight: 700;
@@ -293,7 +356,7 @@ a.link:focus {
   letter-spacing: 0.03em;
   color: var(--bg-color);
 }
-.projects .item {
+.projects .imet {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

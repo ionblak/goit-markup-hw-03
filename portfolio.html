@@ -15,42 +15,50 @@
   <body class="page">
     <!--Шапка страницы-->
     <header>
-      <div class="container">
-        <nav class="site-nav">
+      <div class="container main-nav">
+        <div>
           <a class="logo" href="./index.html"
             >Web <span class="item">Studio</span></a
           >
-          <ul class="list">
-            <li><a class="link" href="./index.html">Студия</a></li>
-            <li>
+        </div>
+        <nav>
+          <ul class="list site-nav">
+            <li class="item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
               <a class="link" href="./portfolio.html" target="_blank"
                 >Портфолио</a
               >
             </li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <address class="mail">
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <ul class="mail list">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- наполнение сайта -->
-    <main class="section">
+    <main class="section-portfolio">
       <div class="container">
-        <h1>Наши проекты</h1>
+        <h1 class="hero-title">Наши проекты</h1>
         <ul class="strainer list">
-          <li><button type="button" class="button">Все</button></li>
-          <li><button type="button" class="button">Веб-сайты</button></li>
-          <li><button type="button" class="button">Приложения</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+          <li class="item"><button type="button" class="radio-button">Все</button></li>
+          <li class="item"><button type="button" class="radio-button">Веб-сайты</button></li>
+          <li class="item"><button type="button" class="radio-button">Приложения</button></li>
+          <li class="item"><button type="button" class="radio-button">Дизайн</button></li>
+          <li class="item"><button type="button" class="radio-button">Маркетинг</button></li>
         </ul>
         <ul class="projects list">
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img.jpg"
@@ -67,7 +75,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-1.jpg"
@@ -76,7 +84,7 @@
                 height="294"
               />
               <h2 class="title">Постер New Orlean vs Golden Star</h2>
-              <p class="item">Дизайн</p>
+              <p class="imet">Дизайн</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -84,7 +92,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-2.jpg"
@@ -93,15 +101,13 @@
                 height="294"
               />
               <h2 class="title">Ресторан Seafood</h2>
-              <p class="item">Приложение</p>
+              <p class="imet">Приложение</p>
               <p class="text">
-                Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
+                Технокряк
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-3.jpg"
@@ -110,7 +116,7 @@
                 height="294"
               />
               <h2 class="title">Проект Prime</h2>
-              <p class="item">Маркетинг</p>
+              <p class="imet">Маркетинг</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -118,7 +124,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-4.jpg"
@@ -127,7 +133,7 @@
                 height="294"
               />
               <h2 class="title">Проект Boxes</h2>
-              <p class="item">Приложение</p>
+              <p class="imet">Приложение</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -135,7 +141,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-5.jpg"
@@ -144,7 +150,7 @@
                 height="294"
               />
               <h2 class="title">Inspiration has no Borders</h2>
-              <p class="item">Веб-сайт</p>
+              <p class="imet">Веб-сайт</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -152,7 +158,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-6.jpg"
@@ -161,7 +167,7 @@
                 height="294"
               />
               <h2 class="title">Издание Limited Edition</h2>
-              <p class="item">Дизайн</p>
+              <p class="imet">Дизайн</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -169,7 +175,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-7.jpg"
@@ -178,7 +184,7 @@
                 height="294"
               />
               <h2 class="title">Проект LAB</h2>
-              <p class="item">Маркетинг</p>
+              <p class="imet">Маркетинг</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -186,7 +192,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="link" href=""
               ><img
                 src="./image/foto-projekt/img-8.jpg"
@@ -195,7 +201,7 @@
                 height="294"
               />
               <h2 class="title">Growing Business</h2>
-              <p class="item">Приложение</p>
+              <p class="imet">Приложение</p>
               <p class="text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -207,53 +213,42 @@
       </div>
     </main>
     <!-- Подвал сайта -->
-    <footer class="footer">
-      <div class="container">
-        <a class="logo link" href="./index.html"
-          >Web <span class="word">Studio</span></a
-        >
-        <address>
-          <ul class="list">
-            <li>
-              <a
-                class="location link"
-                href="https://goo.gl/maps/NypTD91cG4czdafWA"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a class="contaks link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contaks link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-        <b class="action">присоединяйтесь</b>
-        <ul class="list">
-          <li>
-            <a class="link" href="" aria-label="ссылка на инстаграм"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a class="link" href="" aria-label="ссылка на твитер">Twiter </a>
-          </li>
-          <li>
-            <a class="link" href="" aria-label="ссылка на фейсбук">Facebook</a>
-          </li>
-          <li>
-            <a class="link" href="" aria-label="ссылка на линкендин"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+      <footer class="footer">
+        <div class="container">
+          <div class="block-contaks">
+            <a class="logo link" href="./index.html">Web <span class="word">Studio</span></a>
+            <address>
+              <ul class="list">
+                <li>
+                  <a class="location link" href="https://goo.gl/maps/NypTD91cG4czdafWA" target="_blank">г. Киев, пр-т Леси
+                    Украинки, 26</a>
+                </li>
+                <li>
+                  <a class="contaks link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="contaks link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="blok-action">
+            <b class="action">присоединяйтесь</b>
+            <ul class="list social-networks">
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на инстаграм">Instagram</a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на твитер">Twiter </a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на фейсбук">Facebook</a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на линкендин">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </html>

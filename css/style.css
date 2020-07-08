@@ -270,8 +270,14 @@ a.link:focus {
   margin-right: 0;
 }
 .customers .link {
-  display: block;
-  text-align: center;
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 /* подвал страницы */
 .footer {

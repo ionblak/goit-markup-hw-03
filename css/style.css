@@ -157,6 +157,15 @@ a.link:focus {
   padding-top: 94px;
   padding-bottom: 47px;
 }
+.advantages .pictures {
+  margin-bottom: 30px;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--team-bg-color);
+}
 .advantages {
   display: flex;
 }
@@ -164,7 +173,7 @@ a.link:focus {
   width: calc((100%-90px) / 4);
   margin-right: 30px;
 }
-.advantages.item:nth-child(4n) {
+.advantages .item:nth-child(4n) {
   margin-right: 0;
 }
 .advantages .title {
@@ -175,6 +184,8 @@ a.link:focus {
   color: var(--title-text-color);
 }
 .advantages .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -210,7 +221,11 @@ a.link:focus {
 .team {
   display: flex;
 }
+.photo {
+  margin-bottom: 30px;
+}
 .team .item {
+  padding-bottom: 24px;
   width: calc((100%-90px) / 4);
   margin-right: 30px;
   background: var(--bg-color);
@@ -242,13 +257,15 @@ a.link:focus {
 /* стилизация соц-сетей */
 .team .social-networks {
   display: flex;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team .social-networks .item-networks {
   width: calc((100%-30px) / 4);
   margin-right: 10px;
-  text-align: center;
 }
-.social-networks .item:nth-child(4n) {
+.team .social-networks .item-networks:nth-child(4n) {
   margin-right: 0;
 }
 .section-team,
@@ -264,8 +281,6 @@ a.link:focus {
   width: calc((100%-150px) / 6);
 
   margin-right: 30px;
-  /* border: 1px solid #afb1b8;
-  border-radius: 4px; */
 }
 .customers .item:nth-child(6n) {
   margin-right: 0;
